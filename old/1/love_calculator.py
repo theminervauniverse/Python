@@ -1,0 +1,31 @@
+print("welcome to the Love calculator!")
+name1 = input("what is your name?\n")
+name2 = input("what is their name?\n")
+name1_lower = name1.lower()
+name2_lower = name2.lower()
+name1t = int(name1_lower.count("t"))
+name1r = int(name1_lower.count("r"))
+name1u = int(name1_lower.count("u"))
+name1e = int(name1_lower.count("e"))
+name2t = int(name2_lower.count("t"))
+name2r = int(name2_lower.count("r"))
+name2u = int(name2_lower.count("u"))
+name2e = int(name2_lower.count("e"))
+true_count = name1t +name1r + name1u + name1e +name2t + name2r + name2u + name2e
+name1l = int(name1_lower.count("l"))
+name1o = int(name1_lower.count("o"))
+name1v = int(name1_lower.count("v"))
+name1e = int(name1_lower.count("e"))
+name2l = int(name2_lower.count("l"))
+name2o = int(name2_lower.count("o"))
+name2v = int(name2_lower.count("v"))
+name2e = int(name2_lower.count("e"))
+love_count = name1l +name1o + name1v + name1e +name2l + name2o + name2v + name2e
+result = str(true_count) + str(love_count)
+result_int = int(result)
+if result_int < 10 or result_int > 90 :
+    print(f"your score is {result_int},you go together like coke and mentos.")
+elif result_int >= 40 and result_int <= 50 :
+    print(f"Your score is {result_int},you are alright together.")
+else :
+    print(f"your score is {result_int},ur both dumb.")
